@@ -10,4 +10,6 @@ public interface EmpleadoService {
     void guardarEmpleado(Empleado empleado);
     Empleado obtenerEmpleadoPorId(Integer id);
     void eliminarEmpleado(Integer id);
+
+    List<Empleado> listarEmpleadoPorCapacitacionId(Integer idCapacitacion);
 }

@@ -20,6 +20,11 @@
                 <input type="text" th:field="*{direccion}" placeholder="Dirección" class="form-control mb-4 col-4">
                 <input type="text" th:field="*{salario}" placeholder="Salario Empleado" class="form-control mb-4 col-4">
                 <input type="date" th:field="*{fechaIngreso}" placeholder="Fecha ingreso Empleado" class="form-control mb-4 col-4">
+
+                <input type="hidden" th:field="*{usuario.id}">
+                <input type="text" th:field="*{usuario.nombreUsuario}" placeholder="Nombre de Usuario" class="form-control mb-4 col-4">
+                <input type="text" th:field="*{usuario.contrasena}" placeholder="contraseña" class="form-control mb-4 col-4">
+
                 <button type="submit" class="btn btn-info col-2">Guardar</button>
             </form>
         </div>
